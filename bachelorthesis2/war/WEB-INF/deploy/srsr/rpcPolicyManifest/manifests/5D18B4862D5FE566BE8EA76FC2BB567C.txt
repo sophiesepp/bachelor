@@ -1,0 +1,2 @@
+serviceClass: com.sophiesepp.client.GreetingService
+path: A0985CD92FB288BA7C7F9903482BB0DE.gwt.rpc
