@@ -155,7 +155,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 			<div id="heading19" class="heading">Most used melodies</div>
 
 
-
+			<label><input type="checkbox"> Sort values</label>
 
 
 
@@ -1689,7 +1689,7 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 			    width = 960 - margin.left - margin.right,
 			    height = 500 - margin.top - margin.bottom;
 
-			var formatPercent = d3.format(".0%");
+			
 
 			var x = d3.scale.ordinal()
 			    .rangeRoundBands([0, width], .1, 1);
@@ -1703,10 +1703,9 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
 
 			var yAxis = d3.svg.axis()
 			    .scale(y)
-			    .orient("left")
-			    .tickFormat(formatPercent);
+			    .orient("left");
 
-			var svg = d3.select("body").append("svg")
+			var svg = d3.select(".barchartCountryDownloads").append("svg")
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom)
 			  .append("g:")
